@@ -1,0 +1,123 @@
+  1 {
+  2   "$id": "http://example.com/example.json", 
+  3   "type": "object", 
+  4   "definitions": {}, 
+  5   "$schema": "http://json-schema.org/draft-07/schema#", 
+  6   "properties": {
+  7     "id": {
+  8       "$id": "/properties/id", 
+  9       "type": "string", 
+ 10       "title": "The Id Schema ", 
+ 11       "default": "", 
+ 12       "examples": [
+ 13         "5ab861fcb71aad2c5c615516"
+ 14       ]
+ 15     }, 
+ 16     "createdDate": {
+ 17       "$id": "/properties/createdDate", 
+ 18       "type": "string", 
+ 19       "title": "The Createddate Schema ", 
+ 20       "default": "", 
+ 21       "examples": [
+ 22         "2018-03-26T02:59:08.052Z"
+ 23       ]
+ 24     }, 
+ 25     "legacyId": {
+ 26       "$id": "/properties/legacyId", 
+ 27       "type": "string", 
+ 28       "title": "The Legacyid Schema ", 
+ 29       "default": "", 
+ 30       "examples": [
+ 31         "145670592"
+ 32       ]
+ 33     }, 
+ 34     "isInternational": {
+ 35       "$id": "/properties/isInternational", 
+ 36       "type": "boolean", 
+ 37       "title": "The Isinternational Schema ", 
+ 38       "default": false, 
+ 39       "examples": [
+ 40         false
+ 41       ]
+ 42     }, 
+ 43     "isMercosul": {
+ 44       "$id": "/properties/isMercosul", 
+ 45       "type": "boolean", 
+ 46       "title": "The Ismercosul Schema ", 
+ 47       "default": false, 
+ 48       "examples": [
+ 49         true
+ 50       ]
+ 51     }, 
+ 52     "fromCountry": {
+ 53       "$id": "/properties/fromCountry", 
+ 54       "type": "string", 
+ 55       "title": "The Fromcountry Schema ", 
+ 56       "default": "", 
+ 57       "examples": [
+ 58         "BR"
+ 59       ]
+ 60     }, 
+ 61     "toCountry": {
+ 62       "$id": "/properties/toCountry", 
+ 63       "type": "string", 
+ 64       "title": "The Tocountry Schema ", 
+ 65       "default": "", 
+ 66       "examples": [
+ 67         "BR"
+ 68       ]
+ 69     }, 
+ 70     "airlines": {
+ 71       "$id": "/properties/airlines", 
+ 72       "type": "array", 
+ 73       "items": {
+ 74         "$id": "/properties/airlines/items", 
+ 75         "type": "object", 
+ 76         "properties": {
+ 77           "label": {
+ 78             "$id": "/properties/airlines/items/properties/label", 
+ 79             "type": "string", 
+ 80             "title": "The Label Schema ", 
+ 81             "default": "", 
+ 82             "examples": [
+ 83               "latam"
+ 84             ]
+ 85           }, 
+ 86           "timeout": {
+ 87             "$id": "/properties/airlines/items/properties/timeout", 
+ 88             "type": "integer", 
+ 89             "title": "The Timeout Schema ", 
+ 90             "default": 0, 
+ 91             "examples": [
+ 92               60
+ 93             ]
+ 94           }, 
+ 95           "status": {
+ 96             "$id": "/properties/airlines/items/properties/status", 
+ 97             "type": "object", 
+ 98             "properties": {
+ 99               "enable": {
+100                 "$id": "/properties/airlines/items/properties/status/properties/enable", 
+101                 "type": "boolean", 
+102                 "title": "The Enable Schema ", 
+103                 "default": false, 
+104                 "examples": [
+105                   false
+106                 ]
+107               }, 
+108               "message": {
+109                 "$id": "/properties/airlines/items/properties/status/properties/message", 
+110                 "type": "string", 
+111                 "title": "The Message Schema ", 
+112                 "default": "", 
+113                 "examples": [
+114                   "Somente partidas superiores a 0 horas"
+115                 ]
+116               }
+117             }
+118           }
+119         }
+120       }
+121     }
+122   }
+123 }
